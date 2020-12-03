@@ -9,7 +9,7 @@
 // Define your objects here
 
 let dog = {
-   species: "animal",
+   species: "dog",
    gender: 'male',
    legs: 4,
    hands: 0,
@@ -18,11 +18,11 @@ let dog = {
 };
 
 let cat = {
-   species: "animal",
+   species: "cat",
    gender: 'female',
    legs: 4,
    hands: 0,
-   name: "Bars",
+   name: "Sunny",
    saying: "Meow!"
 };
 
