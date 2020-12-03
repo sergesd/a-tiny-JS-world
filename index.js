@@ -8,6 +8,41 @@
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
+let dog = {
+   species: "animal",
+   gender: 'male',
+   legs: 4,
+   hands: 0,
+   name: "Bars",
+   saying: "Gav gav!"
+};
+
+let cat = {
+   species: "animal",
+   gender: 'female',
+   legs: 4,
+   hands: 0,
+   name: "Bars",
+   saying: "Meow!"
+};
+
+let woman = {
+   species: "human",
+   gender: 'female',
+   legs: 2,
+   hands: 2,
+   name: "Lisa",
+   saying: "Hi!"
+};
+
+let man = {
+   species: "human",
+   gender: 'male',
+   legs: 2,
+   hands: 2,
+   name: "James",
+   saying: "Howdy!"
+};
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -28,4 +63,8 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
+  print(dog.species + ';' + dog.name + ';' + dog.gender + ';' + dog.legs + ';' + dog.hands + ';' + dog.saying);
+  print(cat.species + ';' + cat.name + ';' + cat.gender + ';' + cat.legs + ';' + cat.hands + ';' + cat.saying);
+  print(woman.species + ';' + woman.name + ';' + woman.gender + ';' + woman.legs + ';' + woman.hands + ';' + woman.saying);
+  print(man.species + ';' + man.name + ';' + man.gender + ';' + man.legs + ';' + man.hands + ';' + man.saying);
 
