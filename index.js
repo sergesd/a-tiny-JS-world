@@ -14,7 +14,8 @@ let dog = {
    legs: 4,
    hands: 0,
    name: "Bars",
-   saying: "Gav gav!"
+   saying: "Gav gav!",
+   friends: ["James"]
 };
 
 let cat = {
@@ -23,7 +24,8 @@ let cat = {
    legs: 4,
    hands: 0,
    name: "Sunny",
-   saying: "Meow!"
+   saying: "Meow!",
+   friends: []
 };
 
 let woman = {
@@ -32,7 +34,8 @@ let woman = {
    legs: 2,
    hands: 2,
    name: "Lisa",
-   saying: "Hi!"
+   saying: "Hi!",
+   friends: ["James, Sunny"]
 };
 
 let man = {
@@ -41,8 +44,19 @@ let man = {
    legs: 2,
    hands: 2,
    name: "James",
-   saying: "Howdy!"
+   saying: "Howdy!",
+   friends: ["Lisa, Bars, Sunny"]
 };
+
+let catWoman = {
+   species: "catWoman",
+   gender: 'female',
+   legs: 4,
+   hands: 0,
+   name: "Selina",
+   saying: cat.saying,
+   friends: ["Lisa", "Sunny"]
+}
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -63,8 +77,8 @@ let man = {
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
-  print(dog.species + ';' + dog.name + ';' + dog.gender + ';' + dog.legs + ';' + dog.hands + ';' + dog.saying);
-  print(cat.species + ';' + cat.name + ';' + cat.gender + ';' + cat.legs + ';' + cat.hands + ';' + cat.saying);
-  print(woman.species + ';' + woman.name + ';' + woman.gender + ';' + woman.legs + ';' + woman.hands + ';' + woman.saying);
-  print(man.species + ';' + man.name + ';' + man.gender + ';' + man.legs + ';' + man.hands + ';' + man.saying);
+let inhabitants = [dog, cat, woman, man, catWoman];
 
+inhabitants.forEach(inhabitant => {
+   print(inhabitant.species + '; ' + inhabitant.name + '; ' + inhabitant.gender + '; ' + inhabitant.legs + '; ' + inhabitant.hands + '; ' + inhabitant.saying + '; ' + inhabitant.friends.join(", "));
+})
